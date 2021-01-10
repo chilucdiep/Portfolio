@@ -2,6 +2,8 @@ const body = document.querySelector('body');
 const btnHamburger = document.querySelector('#btnHamburger');
 const nav = document.querySelector('.nav');
 const fadeElems = document.querySelectorAll('.has-fade');
+const links = document.querySelectorAll('.link');
+
 
 btnHamburger.addEventListener('click', function(){
     console.log('click hamburger');
@@ -22,4 +24,8 @@ btnHamburger.addEventListener('click', function(){
             element.classList.add('fade-in');
         });
     }
+});
+
+links.addEventListener('click', function(){
+    console.log('click link');
 });
