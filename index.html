@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="icon" href="images/memoji.svg" type="image/x-icon">
+    <title>Chi-Luc Diep</title>
+
+</head>
+<body>
+
+    <div class="hero-wrapper wrapper-background">
+        <div class="wrapper"> 
+            <header>
+                <a href="#" class="logo">
+                    <img src="images/Logo2.svg" alt="Logo">
+                </a>
+
+                <nav class="nav">
+                    <div class="overlay has-fade"></div>
+                    <ul class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#work">My Work</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+
+                    <a id="btnHamburger" href="#" class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <div class="menu has-fade">
+                        <a href="#">Home</a>
+                        <a href="#about">About me</a>
+                        <a href="#work">My Work</a>
+                        <a href="#contact">Contact me</a>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Chi-Luc Diep</h1>
+                    <p>Hey ✌ I am a Web Developer & Engineering Student focused on crafting amazing digital experiences for people️. I love learning and trying new stuff!</p>
+                    <button type="button" class="work-button" onclick="window.location.href='#work';">See my work</button>
+                    <button type="button" class="contact-button" onclick="window.location.href='#contact';">Let's talk!</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about-wrapper">
+        <div class="wrapper">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/memoji.svg" alt="Me">
+                </div>
+                <div class="about-text">
+                    <h2>Slice of me</h2>
+                    <p>Hi! I’m Chi-Luc Diep, a <strong>Web Developer</strong> based 📍 in Montreal, Canada.</p>
+                    <p>I am currently studying at Polytechnique Montréal in Mechanical Engineering. Driven by curiosity, I fell in love web development & design.</p>
+                    <p>I am passionate about technology and human relations. Attention to detail, problem solving & communication are some of my strenghts. I believe that good teamwork and challenges are the best way to grow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-wrapper">
+        <ul class="skills1">
+            <li>
+                <img src="images/skillDev.svg" alt="Developement">
+                <h4>Developement</h4>
+                <p>HTML, CSS, Javascript, Bootstrap, Responsive Website, PHP, MySQL</p>
+            </li>
+            <li>
+                <img src="images/skillDesign.svg" alt="Design">
+                <h4>Design</h4>
+                <p>Figma, User Flow, Landing Pages, Mobile App Design, Prototyping</p>
+            </li>
+        </ul>
+        <ul class="skills2">
+            <li>
+                <img src="images/skillProbSolv.svg" alt="Problem Solving">
+                <h4>Problem Solving</h4>
+                <p id="problem-solving">Analytical Skills, Methodological Approach</p>
+            </li>
+            <li>
+                <img src="images/skillPM.svg" alt="Project Management">
+                <h4>Project Management</h4>
+                <p>Organizational Skills, Change Management, Project Planning, Teamwork</p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="work" class="work-wrapper">
+        <div class="wrapper">
+            <h2>My Work</h2>
+            <div class="work-container">
+                <div class="work-list restaurant-work">
+                </div>
+                <div class="work-list socialmedia-work">
+
+                </div>
+                <div class="work-list ecommerce-work">
+                    <div class="work-image">
+                        <h4>This area is under construction</h4>
+                        <p>Ecommerce website coming soon!</p>
+                        <img src="images/Construction.svg">
+                    </div>
+                    <div class="work-description">
+                        <h3>Beautiful Website for Design Agency</h3>
+                        <p>Designed with Figma</br>Built with HTML, CSS & Vanilla Javascript</p>
+                        <button type="button" class="project-button">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-wrapper">
+        <div class="wrapper">    
+            <h2>Contact me</h2>
+            <div class="card">
+                <form method="POST" action="">
+                    <div class="inside-form">
+                        <div class="name-email">
+                            <div class="name">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                            </div>
+                            <div class="email">
+                                <label for="email">Your Email</label>
+                                <input type="text" id="email" name="email" placeholder="Your email..">
+                            </div>
+                        </div>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Your message.."></textarea>
+                        <input type="submit" value="Send Email">
+                    </div>
+                </form>
+                <div class="success-message">
+                    <p>
+                        Thanks for reaching out!</br>
+                        I will be in touch.</br>
+                        ✌️
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
