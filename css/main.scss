@@ -239,7 +239,7 @@ header {
         .about-text {
             position: absolute;
             h2 {
-                margin: .4em 0 6.5em;
+                margin: .4em 0 7em;
             }
 
             p {
@@ -252,7 +252,9 @@ header {
             margin-top: 6.5em;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .distortion {
@@ -311,17 +313,22 @@ header {
     margin: -1.5em 0 3em;
 
     .work-container {
-        margin: 3em 0;
+        margin: 6em 0 2em;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     
         .work-list {
             background-color: white;
             border-radius: 1em;
             box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
             width: 100%;
+            margin: 0 0 5em;
 
+            :last-child {
+                margin-bottom: 0;
+            }
         }
 
         .work-description {
@@ -379,6 +386,16 @@ header {
                 left: 0;
                 width: 100%;
                 height: 100%;
+            }
+        }
+
+        .tictactoe {            
+            .work-image {
+                background-image: url(../images/TictactoeImage.png);
+                background-position: center;
+            }
+            .project-button {
+                background: linear-gradient(135deg,#F08080, #F8DCC4 150%);
             }
         }
     }
@@ -580,7 +597,7 @@ header {
     
     .about-wrapper {
         .about-content {
-            padding-bottom: 30em;
+            padding-bottom: 35em;
         }
     }
 
@@ -703,7 +720,6 @@ header {
         .work-container {
             .work-list {
                 display: flex;
-                flex-direction: row-reverse;
 
                 .work-image {
                     border-radius: 0em 1em 1em 0;
@@ -712,7 +728,7 @@ header {
                 }
 
                 .work-description {
-                    padding: 4em 1em 4em 2em;
+                    padding: 4em 3em 4em;
                     text-align: left;
                     display: flex;
                     flex-direction: column;
@@ -727,6 +743,15 @@ header {
                         height: 4.2em;
                         font-size: 0.8;
                     }
+                }
+            }    
+            .agency-work {
+                flex-direction: row-reverse;
+            }
+
+            .tictactoe {
+                .work-image {
+                    border-radius: 1em 0 0 1em;
                 }
             }
         }

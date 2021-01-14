@@ -322,7 +322,7 @@ header .logo :hover {
 }
 
 .about-wrapper .about-content .about-text h2 {
-  margin: .4em 0 6.5em;
+  margin: .4em 0 7em;
 }
 
 .about-wrapper .about-content .about-text p {
@@ -336,9 +336,16 @@ header .logo :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-wrapper .about-content .distortion {
@@ -409,7 +416,7 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container {
-  margin: 3em 0;
+  margin: 6em 0 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,9 +424,12 @@ header .logo :hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .work-wrapper .work-container .work-list {
@@ -428,6 +438,11 @@ header .logo :hover {
   -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
           box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
   width: 100%;
+  margin: 0 0 5em;
+}
+
+.work-wrapper .work-container .work-list :last-child {
+  margin-bottom: 0;
 }
 
 .work-wrapper .work-container .work-description {
@@ -487,6 +502,15 @@ header .logo :hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.work-wrapper .work-container .tictactoe .work-image {
+  background-image: url(../images/TictactoeImage.png);
+  background-position: center;
+}
+
+.work-wrapper .work-container .tictactoe .project-button {
+  background: linear-gradient(135deg, #F08080, #F8DCC4 150%);
 }
 
 .contact-wrapper {
@@ -688,7 +712,7 @@ header .logo :hover {
     padding: 1.5em 2.5em;
   }
   .about-wrapper .about-content {
-    padding-bottom: 30em;
+    padding-bottom: 35em;
   }
   .skills-wrapper {
     background-position: center -8.5%;
@@ -805,10 +829,6 @@ header .logo :hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
   }
   .work-wrapper .work-container .work-list .work-image {
     border-radius: 0em 1em 1em 0;
@@ -816,7 +836,7 @@ header .logo :hover {
     padding-left: 21em;
   }
   .work-wrapper .work-container .work-list .work-description {
-    padding: 4em 1em 4em 2em;
+    padding: 4em 3em 4em;
     text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -835,6 +855,15 @@ header .logo :hover {
     width: 18em;
     height: 4.2em;
     font-size: 0.8;
+  }
+  .work-wrapper .work-container .agency-work {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .work-wrapper .work-container .tictactoe .work-image {
+    border-radius: 1em 0 0 1em;
   }
 }
 
