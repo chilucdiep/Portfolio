@@ -427,7 +427,7 @@ header .logo :hover {
   border-radius: 1em;
   -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
           box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-  width: 80%;
+  width: 100%;
 }
 
 .work-wrapper .work-container .work-description {
@@ -457,32 +457,36 @@ header .logo :hover {
   letter-spacing: 0.1em;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+
+.work-wrapper .work-container .work-description .project-button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .work-wrapper .work-container .work-image {
-  background: url(../images/plants.svg);
+  background: url(../images/bgWork.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1em 1em 0 0;
+  padding-bottom: 25em;
+  position: relative;
 }
 
-.work-wrapper .work-container .work-image h4 {
-  color: #F2AC1F;
-  margin: 0;
-  padding: 2.5em 0em 0 1.5em;
-  font-weight: 500;
+.work-wrapper .work-container .work-image :hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.work-wrapper .work-container .work-image p {
-  color: white;
-  padding-left: 2em;
-}
-
-.work-wrapper .work-container .work-image img {
-  display: block;
-  margin-left: auto;
-  padding: 10em 2em 1em;
-  width: 70%;
+.work-wrapper .work-container .work-image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-wrapper {
@@ -808,25 +812,8 @@ header .logo :hover {
   }
   .work-wrapper .work-container .work-list .work-image {
     border-radius: 0em 1em 1em 0;
-    width: 80%;
-  }
-  .work-wrapper .work-container .work-list .work-image h4 {
-    text-align: right;
-    padding: 4em 1.5em 0 3em;
-    width: 25em;
-    font-size: 1em;
-    margin-right: 0;
-  }
-  .work-wrapper .work-container .work-list .work-image p {
-    text-align: right;
-    padding-right: 1.5em;
-    font-size: 0.7em;
-  }
-  .work-wrapper .work-container .work-list .work-image img {
-    padding-top: 9em;
-    padding-right: 1em;
-    padding-bottom: 0;
-    width: 60%;
+    width: 100%;
+    padding-left: 21em;
   }
   .work-wrapper .work-container .work-list .work-description {
     padding: 4em 1em 4em 2em;

@@ -16,6 +16,7 @@ btnHamburger.addEventListener('click', function(){
             element.classList.add('fade-out');
         });
     }
+
     else{ // Open Hamburger Menu
         nav.classList.add('open');
         body.classList.add('noscroll');
@@ -24,8 +25,17 @@ btnHamburger.addEventListener('click', function(){
             element.classList.add('fade-in');
         });
     }
+
+    links.forEach(item => {item.addEventListener('click', function(){
+        console.log('click link');
+    
+        nav.classList.remove('open');
+        body.classList.remove('noscroll');
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        });
+    })
+    });
 });
 
-links.addEventListener('click', function(){
-    console.log('click link');
-});
