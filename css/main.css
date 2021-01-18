@@ -514,7 +514,7 @@ header .logo :hover {
 }
 
 .contact-wrapper {
-  background-color: #7420FF;
+  background-color: #48139F;
   background-image: url(../images/bgContact.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -527,18 +527,14 @@ header .logo :hover {
   margin-top: .4em;
 }
 
-.contact-wrapper .card {
+.contact-wrapper .contact-info {
   text-align: center;
 }
 
-.contact-wrapper .card .success-message {
-  display: none;
-}
-
-.contact-wrapper .card form {
+.contact-wrapper .contact-info .card {
   color: white;
   display: inline-block;
-  padding: 3em 2em;
+  padding: 1em 2em 3em;
   text-align: left;
   border-radius: 1.2em;
   background-color: rgba(255, 255, 255, 0.15);
@@ -551,7 +547,34 @@ header .logo :hover {
   width: 80%;
 }
 
-.contact-wrapper .card form .inside-form {
+.contact-wrapper .contact-info .card .contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-wrapper .contact-info .card .contact-links #gitLogo {
+  width: 2.7em;
+  margin-right: .5em;
+}
+
+.contact-wrapper .contact-info .card .contact-links #linkedinLogo {
+  width: 2em;
+  margin-top: 0.4em;
+}
+
+.contact-wrapper .contact-info .card .success-message {
+  display: none;
+}
+
+.contact-wrapper .contact-info .card form .inside-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,11 +584,11 @@ header .logo :hover {
           flex-direction: column;
 }
 
-.contact-wrapper .card form .inside-form label {
+.contact-wrapper .contact-info .card form .inside-form label {
   font-size: smaller;
 }
 
-.contact-wrapper .card form .inside-form input[type=text] {
+.contact-wrapper .contact-info .card form .inside-form input[type=text] {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -577,35 +600,35 @@ header .logo :hover {
   margin: 0 0 1.4em;
 }
 
-.contact-wrapper .card form .inside-form ::-webkit-input-placeholder {
+.contact-wrapper .contact-info .card form .inside-form ::-webkit-input-placeholder {
   color: #d6d6d6;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: smaller;
 }
 
-.contact-wrapper .card form .inside-form :-ms-input-placeholder {
+.contact-wrapper .contact-info .card form .inside-form :-ms-input-placeholder {
   color: #d6d6d6;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: smaller;
 }
 
-.contact-wrapper .card form .inside-form ::-ms-input-placeholder {
+.contact-wrapper .contact-info .card form .inside-form ::-ms-input-placeholder {
   color: #d6d6d6;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: smaller;
 }
 
-.contact-wrapper .card form .inside-form ::placeholder {
+.contact-wrapper .contact-info .card form .inside-form ::placeholder {
   color: #d6d6d6;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: smaller;
 }
 
-.contact-wrapper .card form .inside-form input, .contact-wrapper .card form .inside-form select, .contact-wrapper .card form .inside-form textarea {
+.contact-wrapper .contact-info .card form .inside-form input, .contact-wrapper .contact-info .card form .inside-form select, .contact-wrapper .contact-info .card form .inside-form textarea {
   color: #d6d6d6;
   font-family: 'Poppins';
   font-weight: 400;
@@ -613,7 +636,7 @@ header .logo :hover {
   width: 100%;
 }
 
-.contact-wrapper .card form .inside-form #message {
+.contact-wrapper .contact-info .card form .inside-form #message {
   height: 6em;
   padding-bottom: 4em;
   background-color: rgba(255, 255, 255, 0.1);
@@ -627,7 +650,7 @@ header .logo :hover {
   margin: 0 0 1.4em;
 }
 
-.contact-wrapper .card form .inside-form input[type=submit] {
+.contact-wrapper .contact-info .card form .inside-form input[type=submit] {
   width: 14em;
   height: 3.2em;
   border: 0;
@@ -891,14 +914,14 @@ header .logo :hover {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .contact-wrapper .card form .inside-form label {
+  .contact-wrapper .contact-info .card form .inside-form label {
     margin-bottom: .8em;
   }
-  .contact-wrapper .card form .inside-form #message {
+  .contact-wrapper .contact-info .card form .inside-form #message {
     height: 10em;
     padding-bottom: 7em;
   }
-  .contact-wrapper .card form .inside-form .name-email {
+  .contact-wrapper .contact-info .card form .inside-form .name-email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -907,7 +930,7 @@ header .logo :hover {
             justify-content: space-between;
     margin-bottom: 1em;
   }
-  .contact-wrapper .card form .inside-form .name-email .name {
+  .contact-wrapper .contact-info .card form .inside-form .name-email .name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -918,7 +941,7 @@ header .logo :hover {
     width: 50%;
     padding-right: 2em;
   }
-  .contact-wrapper .card form .inside-form .name-email .email {
+  .contact-wrapper .contact-info .card form .inside-form .name-email .email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -929,7 +952,7 @@ header .logo :hover {
     width: 50%;
     padding-left: 2em;
   }
-  .contact-wrapper .card form .inside-form .name-email input, .contact-wrapper .card form .inside-form .name-email select, .contact-wrapper .card form .inside-form .name-email textarea {
+  .contact-wrapper .contact-info .card form .inside-form .name-email input, .contact-wrapper .contact-info .card form .inside-form .name-email select, .contact-wrapper .contact-info .card form .inside-form .name-email textarea {
     width: 100%;
   }
 }
@@ -958,9 +981,8 @@ header .logo :hover {
   .skills-wrapper {
     background-position: center -32%;
   }
-  .contact-wrapper .card form {
+  .contact-wrapper .contact-info .card {
     width: 75%;
-    padding: 3em 3em;
   }
 }
 
@@ -1003,7 +1025,7 @@ header .logo :hover {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .contact-wrapper .card form {
+  .contact-wrapper .contact-info .card {
     width: 70%;
   }
 }

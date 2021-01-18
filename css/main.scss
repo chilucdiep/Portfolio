@@ -391,7 +391,7 @@ header {
 
         .tictactoe {            
             .work-image {
-                background-image: url(../images/TictactoeImage.png);
+                background-image: url(../images/tictactoeImage.png);
                 background-position: center;
             }
             .project-button {
@@ -402,7 +402,7 @@ header {
 }
 
 .contact-wrapper {
-    background-color: #7420FF;
+    background-color: #48139F;
     background-image: url(../images/bgContact.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,17 +415,13 @@ header {
         margin-top: .4em;
     }
     
-    .card {
+    .contact-info {
         text-align: center;
 
-        .success-message {
-            display: none;
-        }
-
-        form {
+        .card {
             color: white;
             display: inline-block;
-            padding: 3em 2em;
+            padding: 1em 2em 3em;
             text-align: left;
             border-radius: 1.2em;
             background-color: rgba(255, 255, 255, 0.15);
@@ -435,66 +431,89 @@ header {
             background-clip: padding-box;
             width: 80%;
     
-            .inside-form {
+            .contact-links {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: flex-end;
     
-                label {
-                    font-size: smaller;
-                }
-                
-                input[type=text] {
-                    background-color: rgba(255, 255, 255, 0.1);
-                    backdrop-filter: blur(5px);
-                    border: none;
-                    background-clip: padding-box;
-                    padding: 0.5em;
-                    margin: 0.5em 0;
-                    border-radius: .5em;
-                    margin: 0 0 1.4em;
+                #gitLogo {
+                    width: 2.7em;
+                    margin-right: .5em;
+    
                 }
         
-                ::placeholder {
-                    color: rgb(214, 214, 214);
-                    font-family: 'Poppins';
-                    font-weight: 400;
-                    font-size: smaller;
+                #linkedinLogo {
+                    width: 2em;
+                    margin-top: 0.4em;
                 }
-        
-                input, select, textarea{
-                    color: rgb(214, 214, 214);
-                    font-family: 'Poppins';
-                    font-weight: 400;
-                    font-size: smaller;
-                    width: 100%;
-                }
+            }
     
-                #message {
-                    height: 6em;
-                    padding-bottom: 4em;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    backdrop-filter: blur(5px);
-                    border: none;
-                    background-clip: padding-box;
-                    padding: 0.5em;
-                    margin: 0.5em 0;
-                    border-radius: .5em;
-                    margin: 0 0 1.4em;
-                }
-                
-                input[type=submit] {
-                    width: 14em;
-                    height: 3.2em;
-                    border: 0;
-                    border-radius: 2em;
-                    background-color: #7420FF;
-                    color: white;
-                    font-size: .8em;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;                margin-top: 1.5em;
-                    text-align: center;
-                    align-self: center;
+            .success-message {
+                display: none;
+            }
+    
+            form {
+                .inside-form {
+                    display: flex;
+                    flex-direction: column;
+        
+                    label {
+                        font-size: smaller;
+                    }
+                    
+                    input[type=text] {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(5px);
+                        border: none;
+                        background-clip: padding-box;
+                        padding: 0.5em;
+                        margin: 0.5em 0;
+                        border-radius: .5em;
+                        margin: 0 0 1.4em;
+                    }
+            
+                    ::placeholder {
+                        color: rgb(214, 214, 214);
+                        font-family: 'Poppins';
+                        font-weight: 400;
+                        font-size: smaller;
+                    }
+            
+                    input, select, textarea{
+                        color: rgb(214, 214, 214);
+                        font-family: 'Poppins';
+                        font-weight: 400;
+                        font-size: smaller;
+                        width: 100%;
+                    }
+        
+                    #message {
+                        height: 6em;
+                        padding-bottom: 4em;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(5px);
+                        border: none;
+                        background-clip: padding-box;
+                        padding: 0.5em;
+                        margin: 0.5em 0;
+                        border-radius: .5em;
+                        margin: 0 0 1.4em;
+                    }
+                    
+                    input[type=submit] {
+                        width: 14em;
+                        height: 3.2em;
+                        border: 0;
+                        border-radius: 2em;
+                        background-color: #7420FF;
+                        color: white;
+                        font-size: .8em;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;                margin-top: 1.5em;
+                        text-align: center;
+                        align-self: center;
+                    }
                 }
             }
         }
@@ -795,40 +814,42 @@ header {
     }
 
     .contact-wrapper {
-        .card {
-            form {
-                .inside-form {
-
-                    label {
-                        margin-bottom: .8em;
-                    }
+        .contact-info {
+            .card {
+                form {
+                    .inside-form {
     
-                    #message {
-                        height: 10em;
-                        padding-bottom: 7em;
-                    }
-    
-                    .name-email {
-                        display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 1em;
-                        
-                        .name {
-                            display: flex;
-                            flex-direction: column;
-                            width: 50%;
-                            padding-right: 2em;
+                        label {
+                            margin-bottom: .8em;
                         }
-    
-                        .email {
-                            display: flex;
-                            flex-direction: column;
-                            width: 50%;
-                            padding-left: 2em;
+        
+                        #message {
+                            height: 10em;
+                            padding-bottom: 7em;
                         }
-                        
-                        input, select, textarea{
-                            width: 100%;
+        
+                        .name-email {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 1em;
+                            
+                            .name {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                padding-right: 2em;
+                            }
+        
+                            .email {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                padding-left: 2em;
+                            }
+                            
+                            input, select, textarea{
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -871,10 +892,9 @@ header {
     }
 
     .contact-wrapper {
-        .card {
-            form {
+        .contact-info {
+            .card {
                 width: 75%;
-                padding: 3em 3em;
             }
         }
     }
@@ -937,8 +957,8 @@ header {
     }
 
     .contact-wrapper {
-        .card {
-            form {
+        .contact-info {
+            .card {
                 width: 70%;
             }
         }
