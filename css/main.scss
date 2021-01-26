@@ -37,7 +37,7 @@ ul {
 img {width: 100%;}
 
 button:hover, input[type="submit"]:hover {
-    opacity: 90%;
+    opacity: 95%;
     cursor: pointer;
     transform: translateY(-.9px);
     box-shadow: 0 15px 15px rgba(72,19,159,.1);
@@ -325,6 +325,7 @@ header {
             box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
             width: 100%;
             margin: 0 0 5em;
+            transform-style: preserve-3d;
 
             :last-child {
                 margin-bottom: 0;
@@ -334,6 +335,7 @@ header {
         .work-description {
             padding: 0em 2em 2em;
             text-align: center;
+            transform: translateZ(5px);
 
             h3 {
                 margin-bottom: 1em;
@@ -377,7 +379,7 @@ header {
             position: relative;
 
             :hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba(0, 0, 0, 0.05);
             }
 
             a {
@@ -439,7 +441,6 @@ header {
                 #gitLogo {
                     width: 2.7em;
                     margin-right: .5em;
-    
                 }
         
                 #linkedinLogo {
@@ -453,6 +454,7 @@ header {
             }
     
             form {
+                transform-style: preserve-3d;
                 .inside-form {
                     display: flex;
                     flex-direction: column;

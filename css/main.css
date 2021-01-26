@@ -110,7 +110,7 @@ img {
 }
 
 button:hover, input[type="submit"]:hover {
-  opacity: 90%;
+  opacity: 95%;
   cursor: pointer;
   -webkit-transform: translateY(-0.9px);
           transform: translateY(-0.9px);
@@ -439,6 +439,8 @@ header .logo :hover {
           box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
   width: 100%;
   margin: 0 0 5em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .work-wrapper .work-container .work-list :last-child {
@@ -448,6 +450,8 @@ header .logo :hover {
 .work-wrapper .work-container .work-description {
   padding: 0em 2em 2em;
   text-align: center;
+  -webkit-transform: translateZ(5px);
+          transform: translateZ(5px);
 }
 
 .work-wrapper .work-container .work-description h3 {
@@ -493,7 +497,7 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container .work-image :hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .work-wrapper .work-container .work-image a {
@@ -505,7 +509,7 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container .tictactoe .work-image {
-  background-image: url(../images/TictactoeImage.png);
+  background-image: url(../images/tictactoeImage.png);
   background-position: center;
 }
 
@@ -572,6 +576,11 @@ header .logo :hover {
 
 .contact-wrapper .contact-info .card .success-message {
   display: none;
+}
+
+.contact-wrapper .contact-info .card form {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .contact-wrapper .contact-info .card form .inside-form {

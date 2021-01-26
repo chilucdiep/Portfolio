@@ -3,6 +3,9 @@ const btnHamburger = document.querySelector('#btnHamburger');
 const nav = document.querySelector('.nav');
 const fadeElems = document.querySelectorAll('.has-fade');
 const links = document.querySelectorAll('.link');
+const agencyCard = document.querySelector('.agency-work');
+const tictactoeCard = document.querySelector('.tictactoe');
+const card = document.querySelector('.card');
 
 
 btnHamburger.addEventListener('click', function(){
@@ -39,3 +42,20 @@ btnHamburger.addEventListener('click', function(){
     });
 });
 
+agencyCard.addEventListener('mousemove', function(e) {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
+    let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
+    agencyCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  });
+
+  tictactoeCard.addEventListener('mousemove', function(e) {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
+    let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
+    tictactoeCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  });
+
+  card.addEventListener('mousemove', function(e) {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+    let yAxis = (window.innerHeight / 2  - e.pageY) / 800;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  });
