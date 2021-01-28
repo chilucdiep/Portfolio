@@ -87,6 +87,8 @@ body {
   color: #21155C;
   font-family: 'Poppins', sans-serif;
   max-width: 1680px;
+  -webkit-perspective: -8000px;
+          perspective: -8000px;
 }
 
 body.noscroll {
@@ -112,10 +114,12 @@ img {
 button:hover, input[type="submit"]:hover {
   opacity: 95%;
   cursor: pointer;
-  -webkit-transform: translateY(-0.9px);
-          transform: translateY(-0.9px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
   -webkit-box-shadow: 0 15px 15px rgba(72, 19, 159, 0.1);
           box-shadow: 0 15px 15px rgba(72, 19, 159, 0.1);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .wrapper {
@@ -439,8 +443,6 @@ header .logo :hover {
           box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
   width: 100%;
   margin: 0 0 5em;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .work-wrapper .work-container .work-list :last-child {
@@ -450,8 +452,6 @@ header .logo :hover {
 .work-wrapper .work-container .work-description {
   padding: 0em 2em 2em;
   text-align: center;
-  -webkit-transform: translateZ(5px);
-          transform: translateZ(5px);
 }
 
 .work-wrapper .work-container .work-description h3 {
@@ -474,9 +474,10 @@ header .logo :hover {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
   position: relative;
+  z-index: 300;
 }
 
 .work-wrapper .work-container .work-description .project-button a {
@@ -497,7 +498,9 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container .work-image :hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.08);
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
 }
 
 .work-wrapper .work-container .work-image a {
@@ -576,11 +579,6 @@ header .logo :hover {
 
 .contact-wrapper .contact-info .card .success-message {
   display: none;
-}
-
-.contact-wrapper .contact-info .card form {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .contact-wrapper .contact-info .card form .inside-form {
