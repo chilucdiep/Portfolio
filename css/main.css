@@ -132,20 +132,20 @@ button:hover, input[type="submit"]:hover {
 .wrapper-background {
   background-image: url(../images/Gears.svg), url(../images/puzzle.svg);
   background-repeat: no-repeat;
-  background-position: 95% 20%, 0% 108%;
+  background-position: 100% 20%, 0% 108%;
   background-size: 20%, 40%;
   background-clip: padding-box;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3em;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.5em;
 }
 
@@ -162,14 +162,14 @@ h2::before {
 
 h3 {
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.5em;
 }
 
 p {
   opacity: 0.7;
   font-size: 0.8em;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 
 header {
@@ -352,6 +352,21 @@ header .logo :hover {
           align-items: center;
 }
 
+.about-wrapper .about-content .about-image .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-wrapper .about-content .about-image .caption #hover-emoji {
+  opacity: 1;
+  margin-left: 0.4rem;
+}
+
 .about-wrapper .about-content .distortion {
   width: 200px;
   height: 200px;
@@ -439,8 +454,8 @@ header .logo :hover {
 .work-wrapper .work-container .work-list {
   background-color: white;
   border-radius: 1em;
-  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  -webkit-box-shadow: 30px 30px 20px rgba(46, 54, 68, 0.03);
+          box-shadow: 30px 30px 20px rgba(46, 54, 68, 0.03);
   width: 100%;
   margin: 0 0 5em;
 }
@@ -474,8 +489,8 @@ header .logo :hover {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(130, 84, 229, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(130, 84, 229, 0.2));
   position: relative;
   z-index: 300;
 }
@@ -491,16 +506,12 @@ header .logo :hover {
 .work-wrapper .work-container .work-image {
   background: url(../images/bgWork.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 700px;
   border-radius: 1em 1em 0 0;
   padding-bottom: 25em;
   position: relative;
-}
-
-.work-wrapper .work-container .work-image :hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  -webkit-transition: background-color 500ms ease-in-out;
-  transition: background-color 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .work-wrapper .work-container .work-image a {
@@ -511,13 +522,26 @@ header .logo :hover {
   height: 100%;
 }
 
+.work-wrapper .work-container .work-image:hover {
+  background-size: 110%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .work-wrapper .work-container .tictactoe .work-image {
   background-image: url(../images/TictactoeImage.png);
+  background-size: 620px;
   background-position: center;
+}
+
+.work-wrapper .work-container .tictactoe .work-image:hover {
+  background-size: 110%;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .work-wrapper .work-container .tictactoe .project-button {
   background: linear-gradient(135deg, #F08080, #F8DCC4 150%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
 }
 
 .contact-wrapper {
@@ -683,7 +707,7 @@ header .logo :hover {
 
 @media screen and (min-width: 455px) {
   .wrapper-background {
-    background-position: 75% 20%, 0% 108%;
+    background-position: 90% 20%, 0% 108%;
     background-size: 15%, 30%;
   }
   .hero-content .hero-text .contact-button {
@@ -714,7 +738,7 @@ header .logo :hover {
     left: 10%;
   }
   .wrapper-background {
-    background-position: 60% 20%, 0% 108%;
+    background-position: 90% 20%, 0% 108%;
     background-size: 15%, 25%;
   }
   .hero-content .hero-text p {
@@ -757,7 +781,7 @@ header .logo :hover {
     left: 7%;
   }
   .wrapper-background {
-    background-position: 45% 30%, 0% 108%;
+    background-position: 55% 20%, 0% 108%;
     background-size: 10%, 24%;
   }
   .nav ul {
@@ -972,7 +996,7 @@ header .logo :hover {
     padding: 1.5em 3.5em;
   }
   .wrapper-background {
-    background-position: 35% 30%, 0% 108%;
+    background-position: 55% 30%, 0% 108%;
     background-size: 7%, 22%;
   }
   .hero-content .hero-text p {
@@ -998,7 +1022,7 @@ header .logo :hover {
     padding: 1.5em 5em;
   }
   .wrapper-background {
-    background-position: 33% 30%, 0% 108%;
+    background-position: 55% 30%, 0% 108%;
     background-size: 7%, 20%;
   }
   .hero-content {
@@ -1058,14 +1082,17 @@ header .logo :hover {
     padding: 1.5em 8em;
   }
   .wrapper-background {
-    background-position: 33% 30%, 0% 108%;
+    background-position: 50% 30%, 0% 108%;
     background-size: 6%, 18%;
   }
   .hero-content {
     margin: 6em 0 5em;
   }
+  .hero-content .hero-text h1 {
+    max-width: 550px;
+  }
   .hero-content .hero-image img {
-    margin-top: 1em;
+    margin-top: 5em;
   }
   .skills-wrapper {
     background-position: center -50%;
@@ -1087,7 +1114,7 @@ header .logo :hover {
     margin: 6em 0 6em;
   }
   .hero-content .hero-image img {
-    margin-top: 0em;
+    margin-top: 5em;
   }
   .skills-wrapper {
     background-position: center -52%;
@@ -1104,7 +1131,7 @@ header .logo :hover {
 
 @media screen and (min-width: 1395px) {
   .wrapper-background {
-    background-position: 45% 30%, 0% 108%;
+    background-position: 50% 30%, 0% 108%;
     background-size: 6%, 18%;
   }
   .hero-content {
