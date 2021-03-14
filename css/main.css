@@ -86,7 +86,8 @@ body {
   background-color: #F4F4F4;
   color: #21155C;
   font-family: 'Poppins', sans-serif;
-  max-width: 1750px;
+  max-width: 1725px;
+  margin: 0 auto;
   -webkit-perspective: -8000px;
           perspective: -8000px;
 }
