@@ -86,8 +86,7 @@ body {
   background-color: #F4F4F4;
   color: #21155C;
   font-family: 'Poppins', sans-serif;
-  max-width: 1725px;
-  margin: 0 auto;
+  max-width: 1750px;
   -webkit-perspective: -8000px;
           perspective: -8000px;
 }
@@ -450,6 +449,7 @@ header .logo :hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 5;
 }
 
 .work-wrapper .work-container .work-list {
@@ -541,6 +541,42 @@ header .logo :hover {
 
 .work-wrapper .work-container .tictactoe .project-button {
   background: linear-gradient(135deg, #F08080, #F8DCC4 150%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+}
+
+.work-wrapper .work-container .collection .work-image {
+  background-image: url(../images/CollectionImage.svg);
+  background-size: 620px;
+  background-position: center;
+  z-index: 0;
+}
+
+.work-wrapper .work-container .collection .work-image:hover {
+  background-size: 110%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .collection .project-button {
+  background: linear-gradient(135deg, #9DEBD9, #30B7FF 250%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+}
+
+.work-wrapper .work-container .to-do .work-image {
+  background-image: url(../images/TodoImage.png);
+  background-size: 620px;
+  background-position: center;
+  z-index: 0;
+}
+
+.work-wrapper .work-container .to-do .work-image:hover {
+  background-size: 110%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .to-do .project-button {
+  background: linear-gradient(135deg, #963EF6, #644289 130%);
   -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
           filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
 }
@@ -918,6 +954,15 @@ header .logo :hover {
             flex-direction: row-reverse;
   }
   .work-wrapper .work-container .tictactoe .work-image {
+    border-radius: 1em 0 0 1em;
+  }
+  .work-wrapper .work-container .collection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .work-wrapper .work-container .to-do .work-image {
     border-radius: 1em 0 0 1em;
   }
 }
