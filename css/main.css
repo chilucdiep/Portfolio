@@ -318,7 +318,7 @@ header .logo :hover {
 
 .about-wrapper .about-content {
   position: relative;
-  padding-bottom: 43em;
+  padding-bottom: 48em;
 }
 
 .about-wrapper .about-content .about-text {
@@ -507,7 +507,7 @@ header .logo :hover {
 .work-wrapper .work-container .work-image {
   background: url(../images/bgWork.svg);
   background-repeat: no-repeat;
-  background-size: 700px;
+  background-size: 750px;
   border-radius: 1em 1em 0 0;
   padding-bottom: 25em;
   position: relative;
@@ -524,18 +524,35 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container .work-image:hover {
-  background-size: 110%;
+  background-size: 125%;
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .ecommerce .work-image {
+  background-image: url(../images/DryImage.svg);
+  background-size: 750px;
+  background-position: left;
+}
+
+.work-wrapper .work-container .ecommerce .work-image:hover {
+  background-size: 135%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .ecommerce .project-button {
+  background: linear-gradient(135deg, #ffba44, #ffffff 210%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
 }
 
 .work-wrapper .work-container .tictactoe .work-image {
   background-image: url(../images/TictactoeImage.png);
-  background-size: 620px;
+  background-size: 980px;
   background-position: center;
 }
 
 .work-wrapper .work-container .tictactoe .work-image:hover {
-  background-size: 110%;
+  background-size: 180%;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -547,20 +564,20 @@ header .logo :hover {
 
 .work-wrapper .work-container .collection .work-image {
   background-image: url(../images/CollectionImage.svg);
-  background-size: 620px;
+  background-size: 660px;
   background-position: center;
   z-index: 0;
 }
 
 .work-wrapper .work-container .collection .work-image:hover {
-  background-size: 110%;
+  background-size: 115%;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .work-wrapper .work-container .collection .project-button {
   background: linear-gradient(135deg, #9DEBD9, #30B7FF 250%);
-  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
-          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(48, 183, 255, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(48, 183, 255, 0.2));
 }
 
 .work-wrapper .work-container .to-do .work-image {
@@ -577,8 +594,8 @@ header .logo :hover {
 
 .work-wrapper .work-container .to-do .project-button {
   background: linear-gradient(135deg, #963EF6, #644289 130%);
-  -webkit-filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
-          filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(100, 66, 137, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(100, 66, 137, 0.2));
 }
 
 .contact-wrapper {
@@ -946,6 +963,9 @@ header .logo :hover {
     width: 18em;
     height: 4.2em;
     font-size: 0.8;
+  }
+  .work-wrapper .work-container .ecommerce .work-image {
+    border-radius: 1em 0 0 1em;
   }
   .work-wrapper .work-container .agency-work {
     -webkit-box-orient: horizontal;

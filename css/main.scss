@@ -236,7 +236,7 @@ header {
     
     .about-content {
         position: relative;
-        padding-bottom: 43em;
+        padding-bottom: 48em;
 
         .about-text {
             position: absolute;
@@ -385,7 +385,7 @@ header {
         .work-image {
             background: url(../images/bgWork.svg);
             background-repeat: no-repeat;
-            background-size: 700px;
+            background-size: 750px;
             border-radius: 1em 1em 0 0;
             padding-bottom: 25em;
             position: relative;
@@ -401,18 +401,35 @@ header {
         }
         
         .work-image:hover {
-            background-size: 110%;
+            background-size: 125%;
             background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .ecommerce {            
+            .work-image {
+                background-image: url(../images/DryImage.svg);
+                background-size: 750px;
+                background-position: left;
+            }
+            .work-image:hover {
+                background-size: 135%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .project-button {
+                background: linear-gradient(135deg,#ffba44, #ffffff 210%);
+                filter: drop-shadow(0px 10px 10px rgba(240, 128, 128, 0.2));
+            }
         }
 
         .tictactoe {            
             .work-image {
                 background-image: url(../images/TictactoeImage.png);
-                background-size: 620px;
+                background-size: 980px;
                 background-position: center;
             }
             .work-image:hover {
-                background-size: 110%;
+                background-size: 180%;
                 background-color: rgba(0, 0, 0, 0.08);
             }
 
@@ -425,12 +442,12 @@ header {
         .collection {    
             .work-image {
                 background-image: url(../images/CollectionImage.svg);
-                background-size: 620px;
+                background-size: 660px;
                 background-position: center;
                 z-index: 0;
             }
             .work-image:hover {
-                background-size: 110%;
+                background-size: 115%;
                 background-color: rgba(0, 0, 0, 0.08);
             }
 
@@ -822,6 +839,13 @@ header {
                     }
                 }
             }    
+
+            .ecommerce {
+                .work-image {
+                    border-radius: 1em 0 0 1em;
+                }
+            }
+
             .agency-work {
                 flex-direction: row-reverse;
             }
