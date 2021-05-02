@@ -14,7 +14,6 @@ body {
     background-color:$backgroundColor;
     color: $textColor;
     font-family: 'Poppins', sans-serif;
-    max-width: 1750px;
     perspective: -8000px;
 
 
@@ -1187,12 +1186,6 @@ header {
     }
 }
 
-// @media screen and (min-width: 1500px) {
-//     .skills-wrapper {
-//         background-position: center -80%;
-//     }
-// }
-
 @media screen and (min-width: 1560px) {
     .skills-wrapper {
         background-position: center -55%;
@@ -1202,6 +1195,19 @@ header {
 @media screen and (min-width: 1625px) {
     .skills-wrapper {
         background-position: center -60%;
+    }
+}
+
+@media screen and (min-width: 1725px) {
+    .about-wrapper {
+        .about-content {
+            padding-bottom: 5em;
+        }
+    }
+    
+    .skills-wrapper {
+        background-image: none;
+        justify-content: center;
     }
 }
 

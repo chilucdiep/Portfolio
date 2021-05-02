@@ -42,17 +42,17 @@ btnHamburger.addEventListener('click', function(){
     });
 });
 
-agencyCard.addEventListener('mousemove', function(e) {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
-    let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
-    agencyCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-  });
+// agencyCard.addEventListener('mousemove', function(e) {
+//     let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
+//     let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
+//     agencyCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+//   });
 
-  tictactoeCard.addEventListener('mousemove', function(e) {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
-    let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
-    tictactoeCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-  });
+//   tictactoeCard.addEventListener('mousemove', function(e) {
+//     let xAxis = (window.innerWidth / 2 - e.pageX) / 80;
+//     let yAxis = (window.innerHeight / 2  - e.pageY) / 300;
+//     tictactoeCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+//   });
 
   card.addEventListener('mousemove', function(e) {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 30;

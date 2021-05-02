@@ -86,7 +86,6 @@ body {
   background-color: #F4F4F4;
   color: #21155C;
   font-family: 'Poppins', sans-serif;
-  max-width: 1750px;
   -webkit-perspective: -8000px;
           perspective: -8000px;
 }
@@ -1240,6 +1239,18 @@ header .logo :hover {
 @media screen and (min-width: 1625px) {
   .skills-wrapper {
     background-position: center -60%;
+  }
+}
+
+@media screen and (min-width: 1725px) {
+  .about-wrapper .about-content {
+    padding-bottom: 5em;
+  }
+  .skills-wrapper {
+    background-image: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
