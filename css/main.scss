@@ -408,6 +408,23 @@ header {
             background-color: rgba(0, 0, 0, 0.08);
         }
 
+        .shoppies {
+            .work-image {
+                background-image: url(../images/Shoppies.png);
+                background-size: 770px;
+                background-position: center;
+            }
+            .work-image:hover {
+                background-size: 135%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .project-button {
+                background: linear-gradient(135deg,#014C3E,#000 150%);
+                filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+            }
+        }
+
         .ecommerce {            
             .work-image {
                 background-image: url(../images/DryImage.png);
@@ -824,7 +841,11 @@ header {
                         font-size: 0.8;
                     }
                 }
-            }    
+            }
+
+            .shoppies {
+                flex-direction: row-reverse;
+            }
 
             .ecommerce {
                 .work-image {
