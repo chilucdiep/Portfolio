@@ -484,7 +484,7 @@ header .logo :hover {
 }
 
 .work-wrapper .work-container .work-description p {
-  color: #767DA9;
+  color: #434c85;
   margin-bottom: 3em;
 }
 
@@ -535,6 +535,40 @@ header .logo :hover {
 .work-wrapper .work-container .work-image:hover {
   background-size: 125%;
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .billmate .work-image {
+  background-image: url(../images/Billmate.png);
+  background-size: 680px;
+  background-position: top left;
+}
+
+.work-wrapper .work-container .billmate .work-image:hover {
+  background-size: 125%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .billmate .project-button {
+  background: linear-gradient(135deg, #4894ED, #6EDB9F 150%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+}
+
+.work-wrapper .work-container .daylee .work-image {
+  background-image: url(../images/Daylee.png);
+  background-size: 700px;
+  background-position: top left;
+}
+
+.work-wrapper .work-container .daylee .work-image:hover {
+  background-size: 125%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.work-wrapper .work-container .daylee .project-button {
+  background: linear-gradient(135deg, #BE7BF6, #8E80F9 80%);
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+          filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
 }
 
 .work-wrapper .work-container .shoppies .work-image {
@@ -971,6 +1005,15 @@ header .logo :hover {
     width: 18em;
     height: 4.2em;
     font-size: 0.8;
+  }
+  .work-wrapper .work-container .billmate {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .work-wrapper .work-container .daylee .work-image {
+    border-radius: 1em 0 0 1em;
   }
   .work-wrapper .work-container .shoppies {
     -webkit-box-orient: horizontal;

@@ -356,7 +356,7 @@ header {
             }
 
             p {
-                color: #767DA9;
+                color: #434c85;
                 margin-bottom: 3em;
             }
 
@@ -406,6 +406,40 @@ header {
         .work-image:hover {
             background-size: 125%;
             background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .billmate {
+            .work-image {
+                background-image: url(../images/Billmate.png);
+                background-size: 680px;
+                background-position: top left;
+            }
+            .work-image:hover {
+                background-size: 125%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .project-button {
+                background: linear-gradient(135deg,#4894ED,#6EDB9F 150%);
+                filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+            }
+        }
+
+        .daylee {
+            .work-image {
+                background-image: url(../images/Daylee.png);
+                background-size: 700px;
+                background-position: top left;
+            }
+            .work-image:hover {
+                background-size: 125%;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            .project-button {
+                background: linear-gradient(135deg,#BE7BF6,#8E80F9 80%);
+                filter: drop-shadow(0px 10px 10px rgba(255, 186, 68, 0.2));
+            }
         }
 
         .shoppies {
@@ -840,6 +874,16 @@ header {
                         height: 4.2em;
                         font-size: 0.8;
                     }
+                }
+            }
+
+            .billmate {
+                flex-direction: row-reverse;
+            }
+
+            .daylee {
+                .work-image {
+                    border-radius: 1em 0 0 1em;
                 }
             }
 
