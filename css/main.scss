@@ -388,7 +388,7 @@ header {
         .work-image {
             background: url(../images/bgWork.svg);
             background-repeat: no-repeat;
-            background-size: 750px;
+            background-size: 800px;
             border-radius: 1em 1em 0 0;
             padding-bottom: 25em;
             position: relative;
@@ -404,18 +404,18 @@ header {
         }
         
         .work-image:hover {
-            background-size: 125%;
+            background-size: 145%;
             background-color: rgba(0, 0, 0, 0.08);
         }
 
         .billmate {
             .work-image {
                 background-image: url(../images/Billmate.png);
-                background-size: 680px;
-                background-position: top left;
+                background-size: 800px;
+                background-position: 30% 40%;
             }
             .work-image:hover {
-                background-size: 125%;
+                background-size: 145%;
                 background-color: rgba(0, 0, 0, 0.08);
             }
 
